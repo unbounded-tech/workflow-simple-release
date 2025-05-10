@@ -29,3 +29,4 @@ jobs:
         with:
           tag: ${{ inputs.tag }}
           name: ${{ inputs.name }}
+          bodyFile: CHANGELOG.md
