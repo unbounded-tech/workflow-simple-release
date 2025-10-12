@@ -19,8 +19,6 @@ jobs:
   call-release-workflow:
     uses: unbounded-tech/workflow-simple-release/.github/workflows/workflow.yaml@main
     with:
-      tag_name: ${{ github.ref_name }}
-      release_name: ${{ github.ref_name }}
-      draft: false
-      prerelease: false
+      tag: ${{ github.ref_name }}
+      name: ${{ github.ref_name }}
 ```
