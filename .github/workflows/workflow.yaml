@@ -31,7 +31,7 @@ jobs:
       - uses: runs-on/action@v2.1.2
 
       - name: Checkout code
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6.0.2
 
       - name: Create Release
         uses: ncipollo/release-action@v1.20.0
