@@ -1,9 +1,19 @@
 {
-    "extends": ["config:recommended"],
-    "hostRules": [
-      {
-        "matchHost": "https://github.com/unbounded-tech",
-        "hostType": "git-tags"
-      }
-    ]
-  }
+  "extends": [
+    "config:recommended"
+  ],
+  "hostRules": [
+    {
+      "matchHost": "https://github.com/unbounded-tech",
+      "hostType": "git-tags"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "pinDigests": true
+    }
+  ]
+}
